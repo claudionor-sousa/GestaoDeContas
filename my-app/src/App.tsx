@@ -1,9 +1,10 @@
 import React from "react";
 
 import "./App.css";
+import RoutesApp from "./Routes";
 
 function App() {
-  return <div className="App">ola</div>;
+  return <RoutesApp />;
 }
 
 export default App;

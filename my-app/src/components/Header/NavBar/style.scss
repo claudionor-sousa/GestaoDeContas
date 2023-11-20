@@ -1,0 +1,16 @@
+
+.NavBar{
+    box-shadow: none !important;
+    background-color: white !important;
+    border-bottom: 1px solid rgb(158, 155, 155);
+    Button{
+        color: rgb(158, 155, 155);
+        &:hover{
+            border-bottom: solid 1px rgb(158, 155, 155);
+            background-color: rgb(245, 242, 242);
+            color:rgb(0, 220, 0);
+        }
+        
+    }
+   
+}

@@ -1,0 +1,59 @@
+.ContainerDuvidas{
+    display: flex;
+    flex-direction: column !important;
+    border-top: 1px solid rgb(158, 155, 155);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+   .Title{
+    font-weight: bold;
+    color: rgb(28, 246, 28);
+    &:hover{
+        border-bottom: 1px solid rgb(28, 246, 28);
+        width: 25%;
+    }
+   }
+   .ContainerQuestions{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    span {
+        margin-bottom:1rem;
+        cursor: pointer;
+        &:hover{
+            color: rgb(28, 246, 28);
+        }
+    }
+   }
+  .QuadroDuvidas{
+    background-color: rgb(237, 238, 238);
+    padding: 2rem;
+    border-radius: 20px;
+    .TitleDuvidas{
+        font-weight: bold;
+        font-size: 1rem;
+        color:rgb(51, 50, 50);
+    }
+    span{
+        color: rgb(96, 94, 94);
+    }
+    .BtnDuvidas{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top:2rem;
+        Button{
+            background-color:rgb(72, 250, 72) !important; 
+           color: white;
+           font-weight: bold;
+           font-size: 0.7rem;
+           width: 20%;
+           &:hover{
+            border-bottom: solid 1px rgb(158, 155, 155);
+            background-color: rgb(43, 245, 12)
+            !important;
+            color:rgb(245, 245, 245)!important;
+        }
+        }
+    }
+  }
+}

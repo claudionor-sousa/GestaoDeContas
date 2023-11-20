@@ -1,0 +1,17 @@
+.ContainerMain{
+    margin:  0px 10% 2px 10%;
+    .CardAction{
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0px 15px 0px;
+        flex-wrap: wrap;
+        border: none;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background-color: rgb(170, 235, 160);
+    }
+    .Resources{
+        margin-bottom: 1rem;
+    }
+   
+}

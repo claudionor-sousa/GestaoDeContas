@@ -1,0 +1,28 @@
+.ContainerResources{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+    border-bottom: 1px solid rgb(158, 155, 155);
+    padding-bottom: 1rem;
+   .Title{
+    color: rgb(28, 246, 28);
+   }
+   span {
+    color: rgb(153, 154, 154);
+    margin-bottom: 1rem;
+   }
+  
+  
+}
+.css-1fjvggn-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+    background-color: #e8e7e7 !important;
+    color: rgb(85, 85, 85);
+   }
+.css-uvvswg-MuiButtonBase-root-MuiAccordionSummary-root{  
+    background-color: rgb(170, 235, 160) !important;
+    color: rgb(85, 85, 85) !important;
+    
+ }
+ 

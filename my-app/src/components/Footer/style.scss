@@ -1,0 +1,27 @@
+.footer {
+    bottom: 0;
+    background-color: rgb(104, 241, 104);
+    padding: 5px;
+    width: 100%;
+    margin-top: 1rem;
+    color: rgb(237, 240, 237);
+    ul{
+        display: flex;
+        justify-content: space-around;
+       li{
+        list-style-type: none;
+        font-weight: bold;
+        &:hover{           
+            color: rgb(100, 99, 99);
+            cursor: pointer;
+            border-bottom: solid 1px rgb(158, 155, 155);      
+        }
+       } 
+    }
+    .copy{
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        width: 100%;
+    }
+  }
