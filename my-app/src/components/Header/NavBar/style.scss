@@ -14,3 +14,36 @@
     }
    
 }
+.ContainerForm{
+    display: flex;
+    align-items: center !important;
+    width: 100%;
+    flex-direction: column !important;
+    .form{
+        margin-bottom: 1rem;
+    }
+    .btncadastrar{
+        background-color: rgb(104, 241, 104);
+        padding: 0px 25px 0px 25px;
+        color: white;
+        &:hover{
+            border-bottom: solid 1px rgb(158, 155, 155); 
+            background-color:rgb(28, 246, 28);
+            
+        }
+    }
+}
+.TitleForm{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem !important;
+    color: rgb(16, 228, 16);
+    padding-bottom: 1rem;
+}
+.ContainerFormMain{
+    border: solid 1px rgb(183, 182, 182);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
