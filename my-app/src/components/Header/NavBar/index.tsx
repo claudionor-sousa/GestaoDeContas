@@ -222,7 +222,7 @@ function ResponsiveAppBar() {
                         <TextField
                           className="form"
                           id="outlined-required"
-                          label="email"
+                          label="Email"
                           type="Email"
                         />
                         <TextField

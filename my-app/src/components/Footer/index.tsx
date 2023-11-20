@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import "./style.scss";
 
 export default function Footer() {
