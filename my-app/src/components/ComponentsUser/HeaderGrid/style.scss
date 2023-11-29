@@ -1,0 +1,16 @@
+.TitleHeaderGrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    color: rgb(0, 0, 0);
+    margin-top: 5%;
+    margin-bottom: 2%;
+    .border{
+        border-bottom: 2px solid rgb(48, 239, 48);
+    }
+    p{
+        font-size: 1.5rem !important
+    }
+}

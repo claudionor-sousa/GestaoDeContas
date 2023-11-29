@@ -12,28 +12,11 @@ import Button from "@mui/material/Button";
 
 import MenuItem from "@mui/material/MenuItem";
 import { useNavigate } from "react-router-dom";
-import "./style.scss";
-import { Grid, Modal, TextField } from "@mui/material";
+import "../NavBar/style.scss";
+import { Grid } from "@mui/material";
 
-const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  boxShadow: 24,
-  p: 4,
-  borderRadius: 3,
-};
-function ResponsiveAppBar() {
+function ResponsiveLogadoAppBar() {
   const navigate = useNavigate();
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  const [openLogin, setOpenLogin] = React.useState(false);
-  const handleLoginOpen = () => setOpenLogin(true);
-  const handleLoginClose = () => setOpenLogin(false);
   const logo = require("../../../img/favicon_transparent_32x32.png");
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -116,11 +99,8 @@ function ResponsiveAppBar() {
               <MenuItem onClick={() => navigateToPage("/informacoes")}>
                 <Typography textAlign="center">Informações</Typography>
               </MenuItem>
-              <MenuItem onClick={handleLoginOpen}>
-                <Typography textAlign="center">Login</Typography>
-              </MenuItem>
-              <MenuItem onClick={handleOpen}>
-                <Typography textAlign="center">Cadastrar</Typography>
+              <MenuItem onClick={() => navigateToPage("/")}>
+                <Typography textAlign="center">logout</Typography>
               </MenuItem>
             </Menu>
           </Box>
@@ -164,98 +144,11 @@ function ResponsiveAppBar() {
             <Grid sx={{ p: 0, display: { xs: "none", md: "flex" } }}>
               <Button
                 className="ButtonCadastrarNav"
-                onClick={handleLoginOpen}
+                onClick={() => navigateToPage("/")}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                login
+                logout
               </Button>
-              <Modal
-                open={openLogin}
-                onClose={handleLoginClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={style}>
-                  <Grid className="ContainerFormMain">
-                    <Typography className="TitleForm">
-                      Login de usuário
-                    </Typography>
-                    <Grid className="ContainerForm">
-                      <TextField
-                        className="form"
-                        id="outlined-required"
-                        label="Email"
-                        type="email"
-                      />
-                      <TextField
-                        className="form"
-                        id="outlined-password-input"
-                        label="Password"
-                        type="password"
-                        autoComplete="current-password"
-                      />
-
-                      <Button
-                        className="btncadastrar"
-                        onClick={() => navigateToPage("/user")}
-                      >
-                        Login
-                      </Button>
-                    </Grid>
-                  </Grid>
-                </Box>
-              </Modal>
-              <Button
-                className="ButtonCadastrarNav"
-                onClick={handleOpen}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Cadastrar
-              </Button>
-              <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={style}>
-                  <Grid className="ContainerFormMain">
-                    <Typography className="TitleForm">
-                      Cadastro de usuário
-                    </Typography>
-                    <Typography id="modal-modal-description">
-                      <Grid className="ContainerForm">
-                        <TextField
-                          className="form"
-                          id="outlined-required"
-                          label="Usuario"
-                        />
-                        <TextField
-                          className="form"
-                          id="outlined-required"
-                          label="Email"
-                          type="Email"
-                        />
-                        <TextField
-                          className="form"
-                          id="outlined-password-input"
-                          label="Password"
-                          type="password"
-                          autoComplete="current-password"
-                        />
-                        <TextField
-                          className="form"
-                          id="outlined-password-input"
-                          label="Re-password"
-                          type="password"
-                          autoComplete="current-password"
-                        />
-                        <Button className="btncadastrar">Cadastrar</Button>
-                      </Grid>
-                    </Typography>
-                  </Grid>
-                </Box>
-              </Modal>
             </Grid>
           </Box>
         </Toolbar>
@@ -263,4 +156,4 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default ResponsiveLogadoAppBar;
