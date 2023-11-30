@@ -113,9 +113,7 @@ function ResponsiveAppBar() {
               <MenuItem onClick={() => navigateToPage("/")}>
                 <Typography textAlign="center">Pagina principal</Typography>
               </MenuItem>
-              <MenuItem onClick={() => navigateToPage("/informacoes")}>
-                <Typography textAlign="center">Informações</Typography>
-              </MenuItem>
+
               <MenuItem onClick={handleLoginOpen}>
                 <Typography textAlign="center">Login</Typography>
               </MenuItem>
@@ -151,12 +149,6 @@ function ResponsiveAppBar() {
               sx={{ my: 2, color: "white", display: "block" }}
             >
               Pagina principal
-            </Button>
-            <Button
-              onClick={() => navigateToPage("/informacoes")}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              informações
             </Button>
           </Box>
 

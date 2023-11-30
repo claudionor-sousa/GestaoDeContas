@@ -1,18 +1,33 @@
 import { Button, Grid, Typography } from "@mui/material";
 import "./style.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function HelperHome() {
+  const navigate = useNavigate();
+  const navigateToPage = (path: string) => {
+    navigate(path);
+  };
   return (
     <Grid className="ContainerDuvidas">
       <Typography gutterBottom variant="h5" component="div" className="Title">
         Dúvidas Frequentes
       </Typography>
       <Grid className="ContainerQuestions">
-        <span>Minhas informações estão seguras?</span>
-        <span>Consigo fazer backup dos meus dados?</span>
-        <span>Posso controlar minhas finanças pessoais e do meu negócio?</span>
-        <span>O sistema recebe atualizações frequentes?</span>
-        <span>Consigo controlar meus investimentos e meus ativos?</span>
+        <span onClick={() => navigateToPage("/FaQ")}>
+          Minhas informações estão seguras?
+        </span>
+        <span onClick={() => navigateToPage("/FaQ")}>
+          Consigo fazer backup dos meus dados?
+        </span>
+        <span onClick={() => navigateToPage("/FaQ")}>
+          Posso controlar minhas finanças pessoais e do meu negócio?
+        </span>
+        <span onClick={() => navigateToPage("/FaQ")}>
+          O sistema recebe atualizações frequentes?
+        </span>
+        <span onClick={() => navigateToPage("/FaQ")}>
+          Consigo controlar meus investimentos e meus ativos?
+        </span>
       </Grid>
       <Grid className="QuadroDuvidas">
         <Typography
@@ -31,7 +46,9 @@ export default function HelperHome() {
           funcionamento da nossa plataforma.
         </span>
         <Grid className="BtnDuvidas">
-          <Button>Fale conosco</Button>
+          <Button onClick={() => navigateToPage("/FaleConosco")}>
+            Fale conosco
+          </Button>
           <Button>Manual</Button>
         </Grid>
       </Grid>

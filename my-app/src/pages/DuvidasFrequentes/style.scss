@@ -1,0 +1,24 @@
+/* FAQPage.scss */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .faq-item h2 {
+    color: #333;
+  }
+  
+  .faq-item p {
+    color: #666;
+  }
+  

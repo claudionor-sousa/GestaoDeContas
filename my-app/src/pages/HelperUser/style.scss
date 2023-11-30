@@ -1,0 +1,19 @@
+/* styles.css */
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 15px;
+  }
+  
+  .submitButton {
+    margin-top: 10px;
+    background-color: rgb(72, 250, 72) !important;
+  }
+  

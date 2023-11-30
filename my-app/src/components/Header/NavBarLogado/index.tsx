@@ -96,9 +96,6 @@ function ResponsiveLogadoAppBar() {
               <MenuItem onClick={() => navigateToPage("/")}>
                 <Typography textAlign="center">Pagina principal</Typography>
               </MenuItem>
-              <MenuItem onClick={() => navigateToPage("/informacoes")}>
-                <Typography textAlign="center">Informações</Typography>
-              </MenuItem>
               <MenuItem onClick={() => navigateToPage("/")}>
                 <Typography textAlign="center">logout</Typography>
               </MenuItem>
@@ -132,14 +129,7 @@ function ResponsiveLogadoAppBar() {
             >
               Pagina principal
             </Button>
-            <Button
-              onClick={() => navigateToPage("/informacoes")}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              informações
-            </Button>
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Grid sx={{ p: 0, display: { xs: "none", md: "flex" } }}>
               <Button

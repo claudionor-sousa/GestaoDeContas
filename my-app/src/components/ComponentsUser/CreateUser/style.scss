@@ -1,0 +1,17 @@
+.ContainerCreateDespesa{
+    display: flex;
+    padding-bottom: 0.5rem;
+
+}
+.BtnCreateDespesa{
+    background-color:rgb(72, 250, 72) !important; 
+    font-weight: bold !important;
+    padding: 5px 3rem 5px 2rem;
+    color:rgb(255, 255, 255) !important;
+        &:hover{
+            border-bottom: solid 1px rgb(158, 155, 155);
+            background-color: rgb(43, 245, 12)
+            !important;
+            color:rgb(245, 245, 245)!important;
+        }
+   }
